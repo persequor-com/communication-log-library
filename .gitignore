@@ -1,6 +1,11 @@
 *.iml
 /.idea/*
+!/.idea/runConfigurations/
+config-profiles
 target
+docker/saga-workbench-boot.jar
+docker/solution-boot.jar
+.flattened-pom.xml
 
 # Gradle
 **/build/
