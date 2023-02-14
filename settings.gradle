@@ -1,0 +1,2 @@
+rootProject.name = 'communication-log-library'
+include(':communication-log-library')
