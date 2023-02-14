@@ -1,6 +1,6 @@
 package com.persequor.saga.repository.model;
 
-import com.persequor.saga.repository.RequestResponseModuleSqlDbConfig;
+import com.persequor.saga.repository.CommunicationLogModuleSqlDbConfig;
 import com.valqueries.automapper.MappedType;
 import io.ran.Key;
 import io.ran.Mapper;
@@ -9,7 +9,7 @@ import io.ran.PrimaryKey;
 import java.time.ZonedDateTime;
 import java.util.UUID;
 
-@Mapper(dbType = RequestResponseModuleSqlDbConfig.class)
+@Mapper(dbType = CommunicationLogModuleSqlDbConfig.class)
 public class RequestResponseLogEntry {
 	@PrimaryKey
 	private String id;

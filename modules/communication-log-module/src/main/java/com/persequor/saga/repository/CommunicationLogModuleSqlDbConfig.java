@@ -2,9 +2,9 @@ package com.persequor.saga.repository;
 
 import com.persequor.extension.db.SqlDbPropertiesConfig;
 
-public class RequestResponseModuleSqlDbConfig extends SqlDbPropertiesConfig {
+public class CommunicationLogModuleSqlDbConfig extends SqlDbPropertiesConfig {
 
-	protected RequestResponseModuleSqlDbConfig() {
+	protected CommunicationLogModuleSqlDbConfig() {
 		super("psqr.request_response.mariadb");
 	}
 

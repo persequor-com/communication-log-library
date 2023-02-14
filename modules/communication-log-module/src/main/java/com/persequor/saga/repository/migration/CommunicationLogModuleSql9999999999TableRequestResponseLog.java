@@ -2,7 +2,7 @@ package com.persequor.saga.repository.migration;
 
 import com.persequor.extension.migration.IMigration;
 import com.persequor.extension.migration.migrator.Migrator;
-import com.persequor.saga.repository.RequestResponseModuleSqlDbConfig;
+import com.persequor.saga.repository.CommunicationLogModuleSqlDbConfig;
 import com.valqueries.IOrm;
 import com.valqueries.automapper.SqlGenerator;
 
@@ -21,7 +21,7 @@ public class CommunicationLogModuleSql9999999999TableRequestResponseLog implemen
 	@Override
 	public void up(Migrator migrator) {
 
-		try (IOrm orm = migrator.sql(RequestResponseModuleSqlDbConfig.class).getOrm()) {
+		try (IOrm orm = migrator.sql(CommunicationLogModuleSqlDbConfig.class).getOrm()) {
 			//SQLGenerator-class can be used to easily get "create table"-string if changes to structure occur
 
 			orm.update(
