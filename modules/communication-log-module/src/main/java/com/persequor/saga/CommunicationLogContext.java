@@ -4,7 +4,7 @@ import com.persequor.extension.ioc.IMultipleImplementationsBinder;
 import com.persequor.extension.ioc.registry.ModuleExtensionContext;
 import com.persequor.saga.service.model.IRequestSender;
 
-public class RequestResponseContext extends ModuleExtensionContext {
+public class CommunicationLogContext extends ModuleExtensionContext {
 
 
 	@SuppressWarnings("rawtypes")

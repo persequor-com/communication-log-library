@@ -4,7 +4,7 @@ import com.persequor.extension.migration.ISandboxMigration;
 import com.persequor.extension.migration.migrator.SandboxMigrator;
 import com.persequor.saga.repository.RequestResponseModuleSqlDbConfig;
 
-public class AVM0SandboxSetup implements ISandboxMigration {
+public class CommunicationLogModuleSql9999999999Database implements ISandboxMigration {
 	@Override
 	public void up(SandboxMigrator migrator) throws Exception {
 		migrator.sqlAdmin().createDatabaseAndUser(RequestResponseModuleSqlDbConfig.class);

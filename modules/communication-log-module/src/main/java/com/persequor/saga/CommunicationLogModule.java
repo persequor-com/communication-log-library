@@ -8,14 +8,14 @@ import com.persequor.extension.ioc.module.IModuleSubConfiguration;
 		name = "Request Response Module",
 		description = "Module for providing visualisation of outgoing communication and responses from other systems."
 )
-public class RequestResponseModule extends ExtensionModule {
+public class CommunicationLogModule extends ExtensionModule {
 
-	public RequestResponseContext context() {
-		return this.getExtensionContext(RequestResponseContext.class);
+	public CommunicationLogContext context() {
+		return this.getExtensionContext(CommunicationLogContext.class);
 	}
 
 	public IModuleSubConfiguration defaultConfiguration() {
-		return this.getSubConfigurationContext(RequestResponseConfiguration.class);
+		return this.getSubConfigurationContext(CommunicationLogConfiguration.class);
 	}
 
 	@Override

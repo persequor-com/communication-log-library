@@ -8,12 +8,12 @@ import com.valqueries.automapper.SqlGenerator;
 
 import javax.inject.Inject;
 
-public class HospitalModuleMariaDb2022122000RequestResponseLog implements IMigration {
+public class CommunicationLogModuleSql9999999999TableRequestResponseLog implements IMigration {
 
 	private final SqlGenerator generator;
 
 	@Inject
-	public HospitalModuleMariaDb2022122000RequestResponseLog(SqlGenerator generator) {
+	public CommunicationLogModuleSql9999999999TableRequestResponseLog(SqlGenerator generator) {
 
 		this.generator = generator;
 	}

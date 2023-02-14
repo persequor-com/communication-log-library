@@ -6,13 +6,13 @@ import com.persequor.saga.frontend.RequestResponseDetailsFrontend;
 import com.persequor.saga.frontend.RequestResponseEventExtension;
 import com.persequor.saga.repository.IRequestResponseRepository;
 import com.persequor.saga.repository.RequestResponseLogEntrySqlRepository;
-import com.persequor.saga.repository.migration.AVM0SandboxSetup;
+import com.persequor.saga.repository.migration.CommunicationLogModuleSql9999999999Database;
 import com.persequor.saga.service.*;
 
-public class RequestResponseConfiguration implements IExtensionPointConfiguration {
+public class CommunicationLogConfiguration implements IExtensionPointConfiguration {
 	@Override
 	public void configure(IExtensionPointIoc baseIoc) {
-		baseIoc.db().addMigrationScriptsPackage(AVM0SandboxSetup.class.getPackage());
+		baseIoc.db().addMigrationScriptsPackage(CommunicationLogModuleSql9999999999Database.class.getPackage());
 
 		baseIoc.frontend().component().add(RequestResponseDetailsFrontend.class);
 		baseIoc.frontend().eventExtension().add(RequestResponseEventExtension.class);
