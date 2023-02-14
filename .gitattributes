@@ -1,0 +1,19 @@
+* text=auto
+
+# Force the following filetypes to have unix eols, so Windows does not break them
+*.conf text eol=lf
+*.cql text eol=lf
+*.crt text eol=lf
+Dockerfile text eol=lf
+*.iml text eol=lf
+*.java text eol=lf
+*.json text eol=lf
+*.key text eol=lf
+*.md text eol=lf
+*.pem text eol=lf
+*.properties text eol=lf
+*.sh text eol=lf
+*.sql text eol=lf
+*.txt text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
