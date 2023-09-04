@@ -1,0 +1,16 @@
+name: 🌎 Release to the world
+on:
+  workflow_dispatch:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  modules-prepare-release:
+    name: 🌎 Prepare modules release
+    uses: persequor-com/actions/.github/workflows/modules-prepare-release.yml@v1
+    secrets: inherit
+
+  modules-publish-release:
+    name: 🎉 Publish modules release
+    uses: persequor-com/actions/.github/workflows/modules-publish-release.yml@v1
+    secrets: inherit

@@ -1,0 +1,12 @@
+name: 🪀 Test and publish private
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  modules-workflow:
+    name: 👷 Run modules workflow
+    uses: persequor-com/actions/.github/workflows/saga-solution-workflow.yml@v1
+    secrets: inherit
